@@ -776,6 +776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StaminaChange: 10
+  increase: 257
+  decrease: 258
 --- !u!1 &1348614725
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,10 +18,13 @@ public class StaminaBar : MonoBehaviour
     float baseY;
     float baseScale;
     RectTransform recTrans;
+    
 
     [Header("Testing Variable")]
     [Range(10, 100)]
     public int StaminaChange;
+    public KeyCode increase;
+    public KeyCode decrease;
 
     private void Start()
     {
@@ -57,15 +60,13 @@ public class StaminaBar : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(increase))
         {
             RecoverStamina(StaminaChange);
-            Debug.Log("INCREASE");
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(decrease))
         {
             DecreaseStamina(StaminaChange);
-            Debug.Log("Decrease");
         }
     }
 
