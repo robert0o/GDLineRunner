@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject[] lines;
     public GameObject line1;
     public GameObject line2;
     public GameObject line3;
-    
+    GameObject[] lines = new GameObject[3];
+
     bool moveleft = false;
     bool moveright = false;
 
     public float speed;
     private int currentline;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentline = 1;
@@ -25,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
         lines[2] = line3;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.A)){
@@ -41,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.D)){
             moveleft = false;
             moveright = true;
+            
             if (currentline < 2)
             {
                 currentline += 1;
