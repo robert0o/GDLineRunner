@@ -26,7 +26,7 @@ public class StaminaBar : MonoBehaviour
     public KeyCode increase;
     public KeyCode decrease;
 
-    private void Start()
+    private void Awake()
     {
         recTrans = GetComponent<RectTransform>();
         baseY = recTrans.sizeDelta.y;
@@ -41,7 +41,7 @@ public class StaminaBar : MonoBehaviour
         recTrans.anchoredPosition = new Vector3(-30, newY, 0);
         recTrans.sizeDelta = new Vector2( recTrans.sizeDelta.x, newScale);
         
-        Debug.Log("newy: " + newScale);
+        //Debug.Log("newy: " + newScale);
     }
 
     public void ResetStamina()
