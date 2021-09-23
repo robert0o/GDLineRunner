@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e4c23a2deae90e6478988b67ab07795b, type: 2}
     - target: {fileID: 8231839537441687784, guid: 544cd7f101b629446a9cfcd7069cc296, type: 3}
       propertyPath: m_Name
-      value: 'BlueFlag '
+      value: YellowFlag
       objectReference: {fileID: 0}
     - target: {fileID: 8231839537441687785, guid: 544cd7f101b629446a9cfcd7069cc296, type: 3}
       propertyPath: m_RootOrder
